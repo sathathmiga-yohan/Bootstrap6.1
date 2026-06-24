@@ -309,75 +309,117 @@
 <!-- REF-02 -->
  <section class="container py-5">
 
-    <h2 class="text-center mb-4">Responsive Card Filter</h2>
+<h2 class="text-center mb-4">Responsive Card Filter</h2>
 
-    <div class="text-center mb-4">
-        <button class="btn btn-primary filter-btn active" data-filter="all">All</button>
-        <button class="btn btn-outline-primary filter-btn" data-filter="html">HTML & CSS</button>
-        <button class="btn btn-outline-primary filter-btn" data-filter="bootstrap">Bootstrap</button>
-        <button class="btn btn-outline-primary filter-btn" data-filter="javascript">JavaScript</button>
+<!-- RADIO INPUTS (hidden logic) -->
+<input type="radio" name="filter" id="all" checked>
+<input type="radio" name="filter" id="html">
+<input type="radio" name="filter" id="bootstrap">
+<input type="radio" name="filter" id="javascript">
+
+<div class="text-center mb-4">
+    <label class="btn btn-primary" for="all">All</label>
+    <label class="btn btn-outline-primary" for="html">HTML & CSS</label>
+    <label class="btn btn-outline-primary" for="bootstrap">Bootstrap</label>
+    <label class="btn btn-outline-primary" for="javascript">JavaScript</label>
+</div>
+
+<div class="row g-4">
+  <div class="col-md-4 project html">
+    <div class="card h-100 shadow border-0">
+        <div class="card-body text-center">
+            <h5>Landing Page</h5>
+            <p>Built using HTML & CSS.</p>
+        </div>
     </div>
+</div>
 
-    <div class="row g-4">
-
-        <div class="col-md-4 project html">
-            <div class="card h-100 shadow border-0">
-                <div class="card-body text-center">
-                    <h5>Landing Page</h5>
-                    <p>Built using HTML & CSS.</p>
-                </div>
-            </div>
+<div class="col-md-4 project bootstrap">
+    <div class="card h-100 shadow border-0">
+        <div class="card-body text-center">
+            <h5>Bootstrap Portfolio</h5>
+            <p>Responsive Bootstrap project.</p>
         </div>
-
-        <div class="col-md-4 project bootstrap">
-            <div class="card h-100 shadow border-0">
-                <div class="card-body text-center">
-                    <h5>Bootstrap Portfolio</h5>
-                    <p>Responsive Bootstrap project.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 project javascript">
-            <div class="card h-100 shadow border-0">
-                <div class="card-body text-center">
-                    <h5>Calculator App</h5>
-                    <p>Built using JavaScript.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 project html">
-            <div class="card h-100 shadow border-0">
-                <div class="card-body text-center">
-                    <h5>Restaurant Website</h5>
-                    <p>HTML & CSS Design.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 project bootstrap">
-            <div class="card h-100 shadow border-0">
-                <div class="card-body text-center">
-                    <h5>Admin Dashboard</h5>
-                    <p>Bootstrap Layout.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4 project javascript">
-            <div class="card h-100 shadow border-0">
-                <div class="card-body text-center">
-                    <h5>To-Do List</h5>
-                    <p>JavaScript Project.</p>
-                </div>
-            </div>
-        </div>
-
     </div>
+</div>
+
+<div class="col-md-4 project javascript">
+    <div class="card h-100 shadow border-0">
+        <div class="card-body text-center">
+            <h5>Calculator App</h5>
+            <p>Built using JavaScript.</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 project html">
+    <div class="card h-100 shadow border-0">
+        <div class="card-body text-center">
+            <h5>Restaurant Website</h5>
+            <p>HTML & CSS Design.</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 project bootstrap">
+    <div class="card h-100 shadow border-0">
+        <div class="card-body text-center">
+            <h5>Admin Dashboard</h5>
+            <p>Bootstrap Layout.</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 project javascript">
+    <div class="card h-100 shadow border-0">
+        <div class="card-body text-center">
+            <h5>To-Do List</h5>
+            <p>JavaScript Project.</p>
+        </div>
+    </div>
+</div>
+</div>
 </section>
+<style>
+/* hide radio buttons */
+input[type="radio"] {
+    display: none;
+}
 
+/* default all show */
+.project {
+    display: block;
+}
 
+/* ALL */
+#all:checked ~ .row .project {
+    display: block;
+}
+
+/* HTML */
+#html:checked ~ .row .project {
+    display: none;
+}
+#html:checked ~ .row .html {
+    display: block;
+}
+
+/* Bootstrap */
+#bootstrap:checked ~ .row .project {
+    display: none;
+}
+#bootstrap:checked ~ .row .bootstrap {
+    display: block;
+}
+
+/* JavaScript */
+#javascript:checked ~ .row .project {
+    display: none;
+}
+#javascript:checked ~ .row .javascript {
+    display: block;
+}
+</style>
 
 
 <!-- REF-03 -->
