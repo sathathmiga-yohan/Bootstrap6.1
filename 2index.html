@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swing Image Card</title>
+    <link rel="stylesheet" href="./bootstrap-5.3/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+ <div class="row g-3">
+<!--card-1-->
+  <div class="col-md-4">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+                        class="card-img-top object-fit-cover"
+                        style="height: 350px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Royal Classic Watch</h5>
+                        <p class="card-text text-muted">
+                            Luxury look for everyday style, Perfect blend of style and class
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fw-bold text-success">₹7,999</span>
+                            <span class="text-muted small">Hover to flip</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Updated 10 mins ago</small>
+                    </div>
+                </div>
+            </div>       
+            <div class="flip-card-back">
+                <h3 class="fw-bold">Royal Classic Watch</h3>
+                <p class="text-white-50">Luxury Style Watch</p>
+                <button class="btn btn-light fw-semibold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#product1">
+                    Quick View
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="product1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="fw-bold">Royal Classic Watch</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+                 class="img-fluid rounded">
+          </div>
+          <div class="col-md-6">
+            <h3 class="fw-bold">Royal Classic Watch</h3>
+            <p class="text-muted">
+              Luxury watch designed for elegant style and everyday comfort.
+            </p>
+            <h4 class="text-success fw-bold">₹7,999</h4>
+          </div>
+        </div>
+        <div class="mt-4">
+          <table class="table table-bordered">
+            <tr>
+              <th>Specifications</th>
+              <td>Brand, Dial Size, Water Resistant</td>
+            </tr>
+            <tr>
+              <th>Installment</th>
+              <td>₹2,000 × 3 months + ₹1,999 last month</td>
+            </tr>
+            <tr>
+              <th>Delivery</th>
+              <td>Sri Lanka - Standard (Rs. 255)</td>
+            </tr>
+            <tr>
+              <th>Service</th>
+              <td>14 days return + 6 months warranty</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+    <!--card-2-->
+  <div class="col-md-4">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+                        class="card-img-top object-fit-cover"
+                        style="height: 350px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Smartphone</h5>
+                        <p class="card-text text-muted">
+                            Perfect for calls, apps and social media, Stylish design with modern look
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fw-bold text-success">₹19,999</span>
+                            <span class="text-muted small">Hover to flip</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card-back">
+                <h3 class="fw-bold">Smartphone</h3>
+                <p class="text-white-50">Modern Smart Device</p>
+                <button class="btn btn-light fw-semibold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#product2">
+                    Quick View
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="product2">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="fw-bold">Smartphone</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+                 class="img-fluid rounded">
+          </div>
+          <div class="col-md-6">
+            <h3 class="fw-bold">Smartphone</h3>
+            <p class="text-muted">
+              Perfect for calls, apps and social media with stylish modern design and smooth performance.
+            </p>
+            <h4 class="text-success fw-bold">₹19,999</h4>
+          </div>
+        </div>
+        <div class="mt-4">
+          <table class="table table-bordered">
+            <tr>
+              <th>Specifications</th>
+              <td>Display, RAM, Storage, Processor, Camera</td>
+            </tr>
+            <tr>
+              <th>Installment</th>
+              <td>
+                ₹5,000 × 3 months + ₹4,999 last month
+              </td>
+            </tr>
+            <tr>
+              <th>Delivery</th>
+              <td>Sri Lanka - Standard (Rs. 255)</td>
+            </tr>
+            <tr>
+              <th>Service</th>
+              <td>14 days return + 6 months warranty</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!--card-3-->
+<div class="col-md-4">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
+                        class="card-img-top object-fit-cover"
+                        style="height: 350px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Pro Lens Camera</h5>
+                        <p class="card-text text-muted">
+                            Capture every moment in HD quality, Sharp photos with easy controls
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fw-bold text-success">₹24,999</span>
+                            <span class="text small">BUY</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Updated 5 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card-back">
+                <h3 class="fw-bold">Pro Lens Camera</h3>
+                <p class="text-white-50">Professional Photography Tool</p>
+                <button class="btn btn-light fw-semibold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#product3">
+                    Quick View
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="product3">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="fw-bold">Pro Lens Camera</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
+                 class="img-fluid rounded">
+          </div>
+          <div class="col-md-6">
+            <h3 class="fw-bold">Pro Lens Camera</h3>
+            <p class="text-muted">
+              Capture every moment in HD quality with sharp clarity and easy controls.
+            </p>
+            <h4 class="text-success fw-bold">₹24,999</h4>
+               <span class="text small">BUY</span>
+          </div>
+        </div>
+        <div class="mt-4">
+          <table class="table table-bordered">
+            <tr>
+              <th>Specifications</th>
+              <td>Brand: Canon / Sony, Lens Type: DSLR, Zoom: 20x</td>
+            </tr>
+            <tr>
+              <th>Installment</th>
+              <td>
+                ₹5,000 × 4 months + ₹4,999 last month
+              </td>
+            </tr>
+            <tr>
+              <th>Delivery</th>
+              <td>Sri Lanka - Standard (Rs. 255)</td>
+            </tr>
+            <tr>
+              <th>Service</th>
+              <td>14 days return + 6 months warranty</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .flip-card {
+    background: transparent;
+    height: 520px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.flip-card-front {
+    background: white;
+}
+
+.flip-card-back {
+    background: #0d6efd;
+    color: white;
+    transform: rotateY(180deg);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+</style>
+
+<!-- REF-02 -->
+ <section class="container py-5">
+
+    <h2 class="text-center mb-4">Responsive Card Filter</h2>
+
+    <div class="text-center mb-4">
+        <button class="btn btn-primary filter-btn active" data-filter="all">All</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="html">HTML & CSS</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="bootstrap">Bootstrap</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="javascript">JavaScript</button>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-4 project html">
+            <div class="card h-100 shadow border-0">
+                <div class="card-body text-center">
+                    <h5>Landing Page</h5>
+                    <p>Built using HTML & CSS.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 project bootstrap">
+            <div class="card h-100 shadow border-0">
+                <div class="card-body text-center">
+                    <h5>Bootstrap Portfolio</h5>
+                    <p>Responsive Bootstrap project.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 project javascript">
+            <div class="card h-100 shadow border-0">
+                <div class="card-body text-center">
+                    <h5>Calculator App</h5>
+                    <p>Built using JavaScript.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 project html">
+            <div class="card h-100 shadow border-0">
+                <div class="card-body text-center">
+                    <h5>Restaurant Website</h5>
+                    <p>HTML & CSS Design.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 project bootstrap">
+            <div class="card h-100 shadow border-0">
+                <div class="card-body text-center">
+                    <h5>Admin Dashboard</h5>
+                    <p>Bootstrap Layout.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 project javascript">
+            <div class="card h-100 shadow border-0">
+                <div class="card-body text-center">
+                    <h5>To-Do List</h5>
+                    <p>JavaScript Project.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-- REF-03 -->
+
+<div class="position-fixed top-0 start-50 translate-middle-x p-3" style="z-index: 11">
+    <div class="toast show align-items-center text-dark bg-danger border-0 shadow rounded" style="min-width:250px;" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <!-- 2. Toast ulla irukra content text -->
+            <div class="toast-body medium">
+                This is an danger toast!
+            </div>
+            <!-- 3. Close button (Toast style ku yetra madhiri) -->
+            <button type="button" class="btn-close btn-close-dark me-2     m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            
+        </div>
+    </div>
+</div>
+<div class="position-fixed bottom-0 start-0 p-4" style="z-index: 11">
+    <div class="toast show align-items-center text-dark bg-warning border-0 shadow rounded"  style="min-width:250px;"  role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body medium ">
+                This is a warning toast!
+            </div>
+            <button type="button" class="btn-close btn-close-dark me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
+<!-- REF-04 -->
+<div class="row justify-content-center mt-4">
+  <div class="col-sm-6 ">
+    <div class="card w-100">
+      <div class="card-body">
+        <h5 class="card-title">Special title</h5>
+        <p class="card-text">Main model that opens a confirmation model</p>
+        
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+           <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+               <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+               <p class="model-text">Perform an action that needs confirmation</p>
+               <button class="btn btn-danger" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Delete item</button>
+              </div>
+              <div class="modal-footer">
+               <button class="btn btn-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Close</button>
+              </div>
+            </div>
+           </div>
+        </div>
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first modal</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- REF-05 -->
+<div class="container mt-5 mb-5">
+<div class="accordion w-100 mx-auto" id="accordionBasic" >
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Item-1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionBasic">
+      <div class="accordion-body">
+        <strong><b>WATCH</b></strong> Watch is a useful device that helps us know the time. It is worn on the wrist and is available in many styles and designs. Modern watches can also show the date, track fitness activities, and connect to smartphones ⌚.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Item-2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionBasic">
+      <div class="accordion-body">
+        <strong><b>PHONE</b></strong>A phone is an important device used for communication. It allows people to make calls, send messages, and access the internet. Modern smartphones can also be used for taking photos, studying, and entertainment 📱.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Item-3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionBasic">
+      <div class="accordion-body">
+        <strong><b>LAPTOP</b></strong>A laptop is a portable computer that can be used anywhere. It helps people study, work, browse the internet, and create documents. Laptops are powerful, convenient, and widely used in daily life 💻.
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<script src="./bootstrap-5.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
